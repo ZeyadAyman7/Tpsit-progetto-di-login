@@ -1,0 +1,46 @@
+In the CSS, the styles for the navigation bar, sidebar, and login form are defined. Flexbox is used for the main container, while the sidebar and login form sections are styled using the aside and section selectors, respectively.
+
+Please note that this example focuses on the layout and basic styling. You can add additional CSS to further customize the appearance of the elements.
+
+Remember to save the HTML code in an HTML file (e.g., index.html) and the CSS code in a separate CSS file (e.g., style.css) within the same directory. Then, you
+
+_____________________________________________________________________________________________________________________________________________________________________
+
+In the JavaScript code, two functions are defined: validateEmail and validateNumber. These functions use regular expressions to check whether the email and phone number inputs match the desired format.
+
+The handleSubmit function is called when the form is submitted. It prevents the default form submission behavior, retrieves the values of the email and number inputs, and then validates them using the respective functions. If any validation fails, an alert message is displayed. If both email and number inputs are valid, you can proceed with form submission or perform any additional actions.
+
+Make sure to save the JavaScript code in a separate file named script.js and place it in the same directory as your HTML file.
+
+With these additions, the form will check whether the entered email and phone number are in the expected format before submitting the form.
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+in the modified validateNumber function, the regular expression ^(011|010|012|015)\d{8}$ is used. Here's what it means:
+
+^ indicates the start of the string.
+(011|010|012|015) checks for the specified prefixes: 011, 010, 012, or 015.
+\d{8} matches exactly eight digits.
+$ indicates the end of the string.
+So, the function will now check if the number starts with either 011, 010, 012, or 015, followed by eight digits.
+
+Save the updated JavaScript code, and the form will now validate that the phone number input starts with one of the specified prefixes.
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+In the updated CSS code, we have applied styles to the sidebar (aside) and its contents. Here are some highlights:
+
+The sidebar (aside) has a background color and padding to give it a distinct look.
+The heading (aside h3) has a top margin to separate it from the content.
+The unordered list (aside ul) has no list styles, padding, or margin.
+Each list item (aside ul li) has a bottom margin to create spacing between them.
+The links (aside ul li a) are displayed as block elements with padding, background color, and border radius to create a button-like appearance. They also have a color and text decoration set.
+On hover (aside ul li a:hover), the background color of the links changes to provide visual feedback.
+The paragraph (aside p) has a bottom margin and a different color to distinguish it from the links.
+Save the updated CSS code, and the sidebar links should now have an elegant and beautiful appearance. Feel free to customize the styles further to match your desired design preferences.
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+In the updated CSS code, the .container class is set to display: flex; and flex-direction: column; to create a flex container that arranges its children vertically. The height of the container is set to 100vh to occupy the entire viewport height.
+
+The .welcome-container class has margin-bottom: auto; to push it to the top half of the container, and the .bottom-half class is set to flex: 1; to occupy the remaining space in the container.
